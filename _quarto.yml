@@ -1,0 +1,29 @@
+project:
+  type: book
+
+book:
+  title: "Análisis de Datos para la toma de decisiones"
+  author: "Equipo Atípicos"
+  date: "10/6/2025"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - analisis-datos.qmd
+    - herramientas.qmd
+    - toma-decisiones.qmd
+    - proyecto.qmd
+    - resumen.qmd
+    - referencias.qmd
+
+bibliography: referencias.bib
+
+format:
+  html:
+    theme:
+      - sketchy
+      - brand
+  pdf:
+    documentclass: scrreprt
+lang: es
+
+

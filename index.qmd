@@ -1,0 +1,22 @@
+# Contenidos {.unnumbered}
+
+- Introducción al análisis de datos
+
+  - Introducción a la ciencia de los datos y su impacto en la toma de decisiones.
+  - Tipos de datos y fuentes de datos.
+  - Obtención, preparación, limpieza y estructuración.
+
+- Herramientas de análisis de datos
+
+  - Open Refine
+  - Técnicas avanzadas y buenas prácticas con hojas de cálculo (Google Sheets / Microsoft Excel)
+
+- Toma de decisiones basada en datos
+
+  - Identificación de patrones y tendencias.
+  - Análisis predictivo básico.
+  - Diseño y análisis de indicadores.
+
+- Proyecto final
+
+  - Análisis de un conjunto de datos real y presentación de perspectivas.

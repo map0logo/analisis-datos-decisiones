@@ -1,0 +1,5 @@
+# Toma de decisiones basada en datos
+
+- Identificación de patrones y tendencias.
+- Análisis predictivo básico.
+- Diseño y análisis de indicadores.

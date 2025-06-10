@@ -1,0 +1,5 @@
+# Introducción al análisis de datos
+
+-   Introducción a la ciencia de los datos y su impacto en la toma de decisiones @khalilEffectiveDataAnalysis2025.
+-   Tipos de datos y fuentes de datos.
+-   Obtención, preparación, limpieza y estructuración.

@@ -1,0 +1,4 @@
+# Herramientas de análisis de datos
+
+- Open Refine
+- Técnicas avanzadas y buenas prácticas con hojas de cálculo (Google Sheets / Microsoft Excel)
