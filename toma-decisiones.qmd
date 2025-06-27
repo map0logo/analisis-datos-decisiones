@@ -1,5 +1,89 @@
 # Toma de decisiones basada en datos
+## Identificación de patrones y tendencias
 
-- Identificación de patrones y tendencias.
-- Análisis predictivo básico.
-- Diseño y análisis de indicadores.
+La estadística descriptiva es una herramienta fundamental para el análisis de datos, se enfoca en organizar, resumir y presentar de manera eficiente datos brutos en información útil, lo que permite la identificación de patrones, tendencias y características clave. Es un proceso fundamental para la toma de decisiones informadas en diversas áreas, desde la investigación científica y la gestión empresarial hasta la planificación gubernamental y el estudio de fenómenos sociales.
+
+La estadística descriptiva, es la base para la compresión de los datos, y por consiguiente el punto de partida para la aplicación de técnicas mas robustas y análisis más profundos. Las medidas de tendencia central, son esenciales en el análisis de datos porque proporcionan una representación concisa y comprensible de la ubicación de un conjunto de datos, por su parte, las medidas de dispersión complementan el análisis obtenido de las medidas de tendencia central, ya que cuantifican la variabilidad de los datos, es decir, que tan homogéneos u heterogéneos son los datos, entre otros aspectos. 
+ 
+
+### Medidas de tendencia central
+
+#### Media (media aritmética)
+La media proporciona una medida de la ubicación central de los datos. Si los datos corresponden a una muestra (el caso más frecuente en los análisis) la media se denota con $\bar{x}$ . La media muestral es una estimación puntual de la media poblacional (normalmente desconocida) para la variable de interés. Si se dispone de datos de toda la población, la media poblacional se calcula de la misma manera, pero se denota con la letra griega $\mu$. 
+$$
+\bar{x} = \frac{\sum x_i}{n} = \frac{x_1 + x_2 + \cdots + x_n}{n}
+$$
+
+**Ejemplo:** Considerando que las calificaciones en un examen son: $7, 9, 6, 8, 10$. La media aritmética se calcula de la siguiente forma:
+$$
+\bar{x} = \frac{7 + 9 + 6 + 8 + 10}{5}
+$$
+
+$$
+\bar{x} = \frac{40}{5}
+$$
+
+$$
+\bar{x} = 8
+$$
+
+Una media (o promedio) de $8$ puntos indica que, en general, el grupo de estudiantes ha demostrado un rendimiento bueno a muy bueno en la asignatura, considerando una escala de 0-10 para las calificaciones.
+
+
+#### La Mediana
+Es otra medida de ubicación central, representa el valor intermedio cuando los datos se ordenan en orden ascendente (de menor a mayor). Cuando se tiene un número impar de observaciones, la mediana es el valor intermedio. Para un número par de observaciones no tiene un único valor intermedio. En este caso, seguimos la convención y definimos la mediana como el promedio de los valores de las dos observaciones centrales. Retomando el ejemplo de las calificaciones y ordenando los datos de menor a mayor:
+$$6,7,\textcolor{red}{8},9,10$$
+
+Se puede determinar que la mediana corresponde al valor $8$, el cuál ubica la posición central, esto quiere decir, que el 50% de las calificaciones son iguales o inferiores a $8$, y el 50% de las calificaciones son iguales o superiores a $8$ puntos. Considerando que, en lugar de tener 5 calificaciones, tenemos el siguiente grupo de calificaciones: $7,9,6,8,10,9$ (caso n par). Ordenando de menor a mayor:
+$$6,7,\textcolor{red}{8,9},9,10$$ 
+
+se puede determinar que los valores centrales son $8$ y $9$, en consecuencia:
+
+$$
+\text{Mediana} = \frac{(8+9)}{2}= 8.5
+$$
+ 
+
+En este sentido, el cálculo de la mediana está determinada por las siguiente formulas, según sea el caso:
+
+- $n$ impar: 
+$$
+\text{Mediana} = x_{(\frac{n+1}{2})}
+$$
+
+- $n$ par:
+
+$$
+\text{Mediana} = \frac{x_{(\frac{n}{2})} + x_{(\frac{n}{2}+1)}}{2}
+$$
+
+#### Moda
+Indica el valor que más se repite dentro de un conjunto de datos, tomando como referencia el último conjunto de datos mencionado en el cálculo de la mediana para las calificaciones de un grupo de estudiantes $(6,7,8,9,9,10)$ se puede determinar que la moda o calificación más frecuente es $9$ puntos. Es importante recalcar que existe la posibilidad de tener mas de una moda en un conjunto de datos o no tener ninguna. 
+
+- **Unimodal**: $(6,7,8,9,9,10)$ $\text{Moda} = 9$
+- **Bimodal**: $(6,7,8,8,9,9,10)$ $\text{Moda} = 8$ y $9$
+- **Multimodal**: $(6,6,7,8,8,9,9,10)$ $\text{Moda} = 6$, $8$ y $9$
+- **Amodal**: $(6,7,8,9)$ 
+
+
+### Medidas de dispersión
+
+ccccccc
+
+## Visualización de datos
+
+- Tipos de gráficos adecuados
+- Principios para la visualización efectiva
+
+## Análisis predictivo básico. 
+
+Introducción al Análisis Predictivo
+
+#### Modelo de Regresión Lineal Simple
+
+## Diseño y Análisis de Indicadores (KPIs)
+- Definición y Clasificación de Indicadores
+- Proceso de Diseño de Indicadores
+- Análisis y Monitoreo de Indicadores
+
+
