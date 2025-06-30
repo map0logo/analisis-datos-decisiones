@@ -67,8 +67,89 @@ Indica el valor que más se repite dentro de un conjunto de datos, tomando como 
 
 
 ### Medidas de dispersión
+#### Rango
+Es la medida de dispersión más simple, se define como la diferencia entre el valor máximo y el valor mínimo en un conjunto de datos. Esta medida genera una idea rápida de la amplitud total o la extensión de la dispersión de los datos.
 
-ccccccc
+$$
+\text{Rango} = \text{Valor Máximo} - \text{Valor Mínimo}
+$$
+
+Retomando el ejemplo del conjunto de calificaciones $(6,7,8,9,9,10)$ se puede determinar:
+$$
+\text{Rango} = 10 - 6 = 4
+$$
+
+El resultado indica que la extensión total de las calificaciones en este grupo de estudiantes es de 4 puntos. Esto quiere decir, que la diferencia entre la nota más alta obtenida (10) y la más baja (6) es de cuatro unidades en la escala de 0 a 10.
+
+#### La Varianza
+La varianza se basa en la desviación con respecto a la media, que es la diferencia entre el valor de cada observación $x_i$ y la media ($\bar{x}$) al cuadrado, dividido entre el número de observaciones menos uno, en el caso de trabajar con una muestra. La formula tiene la forma: 
+
+$$
+s^2 = \frac{\sum (x_i - \bar{x})^2}{n - 1}
+$$
+
+Considerando el ejemplo abordado en la parte anterior, se puede terminar la varianza siguiendo el procedimiento a continuación:
+
+Paso 1: Cálculo de la media ($\bar{x}$)
+$$ 
+\bar{x} = \frac{6 + 7 + 8 + 9 + 9 + 10}{6} = \frac{49}{6} \approx 8.1667 
+$$
+
+Paso 2: Calcular las Desviaciones Cuadradas con Respecto a la Media $(x_i - \bar{x})^2$
+
+$$
+x_1 = 6: (6 - 8.1667)^2 = (-2.1667)^2 = 4.6946
+$$
+
+$$
+x_2 = 7: (7 - 8.1667)^2 = (-1.1667)^2 = 1.3612
+$$
+
+$$
+x_3 = 8: (8 - 8.1667)^2 = (-0.1667)^2 = 0.0278
+$$
+
+$$
+x_4 = 9: (9 - 8.1667)^2 = (0.8333)^2 = 0.6944
+$$
+
+$$
+x_5 = 9: (9 - 8.1667)^2 = (0.8333)^2 = 0.6944
+$$
+
+$$
+x_6 = 10: (10 - 8.1667)^2 = (1.8333)^2 = 3.3611
+$$
+
+Paso 3: Sumar las Desviaciones Cuadradas ($\sum (x_i - \bar{x})^2$)
+$$
+\sum (x_i - \bar{x})^2 = 4.6946 + 1.3612 + 0.0278 + 0.6944 + 0.6944 + 3.3611 = 10.8335
+$$
+
+Paso 4: Calcular la Varianza Muestral ($s^2$)
+$$
+s^2 = \frac{\sum (x_i - \bar{x})^2}{n - 1} = \frac{10.8335}{5}
+$$
+
+$$
+s^2 \approx 2.1667
+$$
+
+Una varianza de 2.1667 en calificaciones considerando la escala de 0-10,  indica que las calificaciones de este grupo de estudiantes están bastante agrupadas y son consistentes alrededor de su media cuyo valor es aproximadamente 8.17 puntos. La baja magnitud de la varianza sugiere que no hay una gran heterogeneidad en el rendimiento académico del grupo; la mayoría de los estudiantes se desempeñan a un nivel similar y cercano al promedio general.
+
+#### La Desviación Estandar
+La desviación estándar se define como la raíz cuadrada positiva de la varianza, es decir:
+
+$$
+s = \sqrt{s^2}
+$$
+
+Considerando el ejemplo desarrollado: 
+$$
+s = \sqrt{2.1667} \approx 1.4719
+$$
+
+Una desviación estándar de 1.4719 puntos significa que, en promedio, las calificaciones individuales de los estudiantes se desvían o varían aproximadamente 1.47 puntos de la media del grupo.
 
 ## Visualización de datos
 
