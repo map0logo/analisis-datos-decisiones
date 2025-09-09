@@ -152,9 +152,52 @@ $$
 Una desviación estándar de 1.4719 puntos significa que, en promedio, las calificaciones individuales de los estudiantes se desvían o varían aproximadamente 1.47 puntos de la media del grupo.
 
 ## Visualización de datos
+La elección del gráfico adecuado es fundamental para comunicar un mensaje de manera clara. Cada tipo de gráfico va relacionado a un propósito específico, y de la relación que se quiera mostrar entre los datos.
 
-- Tipos de gráficos adecuados
-- Principios para la visualización efectiva
+### Tipos de gráficos adecuados
+
+#### Gráficos de Barras o Columnas
+Son los indicados para comparar categorías discretas o elementos individuales. Se pueden presentar en dos sentidos las barras horizontales, son excelentes para nombres de categorías largos; mientras que las verticales son más comunes para mostrar cambios a lo largo del tiempo.
+
+**AGREGAR IMAGEN**
+
+#### Gráficos de Líneas
+Ideales para mostrar tendencias a lo largo del tiempo. Ya que muestran la dirección, la magnitud y la tasa de cambio, permitiendo ver patrones y anomalías fácilmente. Una aplicación correcta de este tipo de gráfico sería para el seguimiento de ventas mensuales o la evolución del precio de cambio de divisas.
+**AGREGAR IMAGEN**
+
+#### Gráficos Circulares o de Torta
+ Se utiliza para mostrar la proporción de una parte con respecto a un todo. Son más efectivos cuando se tienen pocas categorías, idealmente menos de cinco. La suma total de las partes es el 100%. Un error frecuente es usarlos con demasiadas categorías, lo que los hace difíciles de leer.
+**AGREGAR IMAGEN**
+
+#### Gráficos de Dispersión o de Puntos
+ Son una muy buena opción para visualizar la relación entre dos variables numéricas. Muestran si existe una correlación (positiva, negativa o nula) entre los datos. Un ejemplo, de su aplicación es para ver la relación entre la inversión publicitaria y las ventas.
+**AGREGAR IMAGEN**
+
+ #### Gráficos de Área
+Similares a los gráficos de líneas, pero el área debajo de la línea está rellena. Son útiles para mostrar la evolución de un valor a lo largo del tiempo mientras se enfatiza el volumen o la acumulación. Son buenos para series de datos con un crecimiento constante.
+**AGREGAR IMAGEN**
+
+#### Histogramas
+ Se usan para mostrar la distribución de una variable numérica. Agrupan los datos en intervalos y muestran la frecuencia con la que los valores caen en cada intervalo. Son útiles para comprender la forma de los datos, por ejemplo, la distribución de edades en un grupo.
+**AGREGAR IMAGEN**
+
+### Principios para la visualización efectiva
+Al crear una visualización esta no solo debe ser estéticamente agradable, sino también funcional y fácil de interpretar. Para lograr el cumplimiento de estas partes de forma efectiva se deben tener en cuenta los siguientes criterios:
+
+1.	Simplicidad y enfoque: es necesario eliminar cualquier elemento que no sea esencial para entender los datos. Esto incluye líneas de cuadrícula innecesarias, etiquetas redundantes o efectos 3D. Ya que el propósito no está agregar más color, sino maximizar la información. 
+**AGREGAR IMAGEN**
+
+2.	Elegir el gráfico adecuado: según el apartado anterior, la elección del tipo de gráfico es el primer paso crítico. Un gráfico de barras no es adecuado para mostrar tendencias temporales, y un gráfico de líneas es deficiente para comparar categorías individuales no relacionadas con el tiempo.
+**AGREGAR IMAGEN**
+
+3.	Etiquetar con claridad: todos los elementos importantes deben estar etiquetados. Por ejemplo, los títulos del gráfico y de los ejes deben ser descriptivos, y las etiquetas de los datos legibles, por último, las unidades de medida deben estar claras.
+**AGREGAR IMAGEN**
+
+4.	Usar Colores con propósito: el color debe usarse para resaltar información clave o para distinguir entre categorías, no solo para decorar. Se debe evitar usar demasiados colores y pensar que sean accesibles, por ejemplo, considerar el daltonismo.
+**AGREGAR IMAGEN**
+
+5.	Ordena los datos de manera lógica: Si un gráfico de barras compara categorías, ordénalas de mayor a menor para facilitar la comparación. Si el gráfico muestra datos temporales, el tiempo debe fluir de izquierda a derecha.
+**AGREGAR IMAGEN**
 
 ## Análisis predictivo básico. 
 
