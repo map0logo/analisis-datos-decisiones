@@ -1,0 +1,40 @@
+---
+title: Introducción al análisis de datos
+subtitle: Introducción a la ciencia de los datos y su impacto en la toma de decisiones
+date: last-modified
+author:
+  - name: Francisco Palm
+    orcid: 0000-0002-1293-0868
+    email: fpalm@qu4nt.com
+    affiliations: qu4nt
+format:
+  clean-revealjs:
+    code-fold: true
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+lang: es
+logo: images/qu4nt-logo.png
+lightbox: true
+---
+
+
+# Presentación: Análisis de Datos para Empresas
+
+## Introducción al análisis de datos
+
+---
+### ¿Qué es el análisis de datos?
+
+El análisis de datos es el proceso de inspeccionar, limpiar, transformar y modelar datos con el objetivo de descubrir información útil, llegar a conclusiones y apoyar la toma de decisiones.
+
+En el mundo empresarial, esto significa convertir datos brutos en insights accionables.
+
+---
+### El ciclo del análisis de datos
+
+1. **Preguntar**: Definir el problema empresarial
+2. **Preparar**: Recopilar y almacenar datos
+3. **Procesar**: Limpiar y transformar datos
+4. **Analizar**: Explorar, visualizar y modelar
+5. **Compartir**: Comunicar hallazgos y tomar decisiones
