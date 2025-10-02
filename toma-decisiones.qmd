@@ -168,7 +168,7 @@ Ideales para mostrar tendencias a lo largo del tiempo. Ya que muestran la direcc
 #### Gráficos Circulares o de Torta
  Se utiliza para mostrar la proporción de una parte con respecto a un todo. Son más efectivos cuando se tienen pocas categorías, idealmente menos de cinco. La suma total de las partes es el 100%. Un error frecuente es usarlos con demasiadas categorías, lo que los hace difíciles de leer.
 **AGREGAR IMAGEN**
-
+lll
 #### Gráficos de Dispersión o de Puntos
  Son una muy buena opción para visualizar la relación entre dos variables numéricas. Muestran si existe una correlación (positiva, negativa o nula) entre los datos. Un ejemplo, de su aplicación es para ver la relación entre la inversión publicitaria y las ventas.
 **AGREGAR IMAGEN**
