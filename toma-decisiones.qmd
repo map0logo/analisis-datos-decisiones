@@ -173,7 +173,7 @@ Ideales para mostrar tendencias a lo largo del tiempo. Ya que muestran la direcc
  Son una muy buena opción para visualizar la relación entre dos variables numéricas. Muestran si existe una correlación (positiva, negativa o nula) entre los datos. Un ejemplo, de su aplicación es para ver la relación entre la inversión publicitaria y las ventas.
 **AGREGAR IMAGEN**
 
- #### Gráficos de Área
+#### Gráficos de Área
 Similares a los gráficos de líneas, pero el área debajo de la línea está rellena. Son útiles para mostrar la evolución de un valor a lo largo del tiempo mientras se enfatiza el volumen o la acumulación. Son buenos para series de datos con un crecimiento constante.
 **AGREGAR IMAGEN**
 
