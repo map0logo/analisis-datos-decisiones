@@ -1,0 +1,273 @@
+---
+title: Introducción al análisis de datos
+subtitle: Introducción a la ciencia de los datos y su impacto en la toma de decisiones
+date: last-modified
+author:
+  - name: Francisco Palm
+    orcid: 0000-0002-1293-0868
+    email: fpalm@qu4nt.com
+    affiliations: qu4nt
+format:
+  clean-revealjs:
+    code-fold: true
+    scss: cursos.scss
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+lang: es
+logo: images/qu4nt-logo.png
+lightbox: true
+---
+
+# Presentación: Análisis de Datos para Empresas
+
+## ¿Por qué analizar datos en una empresa?
+
+Imagina que eres el gerente de una cadena de cafeterías llamada **"Café Latte & Co"**. Tienes 15 locales en la ciudad, y aunque las ventas parecen ir bien, no sabes exactamente qué está funcionando... ni qué está fallando.
+
+- ¿Venden más capuchinos en invierno?  
+- ¿Qué tienda tiene mejor rendimiento?  
+- ¿Los clientes prefieren pagar con tarjeta o efectivo?  
+- ¿Y si pudiéramos predecir cuándo se acaban los granos de café?
+
+Sin datos, tomas decisiones basadas en intuición.  
+Con datos, tomas decisiones basadas en evidencia.
+
+## Introducción al análisis de datos
+
+### ¿Qué es el análisis de datos?
+
+El análisis de datos es el proceso de inspeccionar, limpiar, transformar y modelar datos con el objetivo de descubrir información útil, llegar a conclusiones y apoyar la toma de decisiones.
+
+En el mundo empresarial, esto significa convertir datos brutos en insights accionables.
+
+
+## El ciclo del análisis de datos
+
+1. **Preguntar**: Definir el problema empresarial
+2. **Preparar**: Recopilar y almacenar datos
+3. **Procesar**: Limpiar y transformar datos
+4. **Analizar**: Explorar, visualizar y modelar
+5. **Compartir**: Comunicar hallazgos y tomar decisiones
+
+
+## Impacto en la toma de decisiones
+
+Ejemplo: Netflix utiliza análisis de datos para:
+
+- Recomendar contenido (75% de lo visto viene de recomendaciones)
+- Decidir qué producciones originales crear
+- Optimizar la calidad de streaming
+
+¡Esto les ahorra $1 billón anual en pérdida de suscriptores!
+
+
+## Tipos de datos y fuentes de datos
+
+
+### Tipos de datos en empresas
+
+- **Datos estructurados**: Tablas con formato definido (BD relacionales)
+- **Datos semiestructurados**: JSON, XML, logs
+- **Datos no estructurados**: Texto, imágenes, videos
+
+
+### Fuentes de datos comunes
+
+- **Internas**: CRM, ERP, transacciones, logs web
+- **Externas**: Redes sociales, datos gubernamentales, APIs
+- **Generadas por usuarios**: Reseñas, clicks, interacciones
+
+
+### Ejemplo: Empresa de retail
+
+```python
+# Datos de diferentes fuentes
+transacciones = base_de_datos_sql.query("VENTAS")
+resenas = api_google.get_reviews("nuestra_tienda")
+trafico_web = archivo_csv.load("google_analytics.csv")
+```
+
+
+## Obtención, preparación y limpieza de datos
+
+### El problema de los datos "sucios"
+
+En la práctica, el 80% del tiempo de un analista se dedica a limpiar y preparar datos.
+
+Problemas comunes:
+- Valores faltantes
+- Datos inconsistentes
+- Formatos incorrectos
+- Duplicados
+- Outliers
+
+
+### Ejemplo: Datos de ventas problemáticos
+
+| OrderID | Fecha      | Producto     | Precio | Cliente          |
+|---|---|---|---|---|
+| 001     | 2023-02-30 | Laptop XYZ   | 999.99 | Juan Pérez       |
+| 002     | 15/07/2023 | Mouse ABC    | 25.50  | María González   |
+| 003     | 2023-04-12 | Teclado DEF  |        | Ana López        |
+| 001     | 2023-02-28 | Laptop XYZ   | 999.99 | Juan Pérez       |
+| 004     | 2023-05-22 | Monitor GHI  | 250.00 | Carlos Sánchez   |
+
+
+## Soluciones comunes de limpieza
+
+- **Valores faltantes**: Imputación o eliminación
+- **Formatos inconsistentes**: Estandarización
+- **Duplicados**: Identificación y eliminación
+- **Outliers**: Detección y tratamiento
+
+
+## Caso práctico: Análisis de ventas
+
+### Conjunto de datos seleccionado
+Usaremos datos de ventas de una empresa ficticia "TecnoShop" que vende productos electrónicos.
+
+**Variables incluidas**:
+
+- Order ID, Fecha, Producto, Categoría, Precio, Cantidad, Cliente, Región
+
+**Problemas intencionales**:
+
+- Fechas en formatos inconsistentes
+- Valores faltantes en precios
+- Productos con nombres inconsistentes
+- Clientes duplicados con variaciones
+
+
+## Descarga y preparación inicial
+
+Los datos están disponibles en:
+
+[Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii)
+
+Hemos adaptado el conjunto para incluir problemas comunes de calidad de datos.
+
+## Uso práctico de OpenRefine
+
+### ¿Qué es OpenRefine?
+
+OpenRefine es una herramienta poderosa para trabajar con datos desordenados: limpiarlos, transformarlos de un formato a otro y ampliarlos con servicios web y datos externos.
+
+**Ventajas**:
+
+- Interfaz visual para limpieza de datos
+- Funciones de agrupamiento para estandarizar valores
+- Historial de operaciones para reproducibilidad
+- Expresiones GREL para transformaciones complejas
+
+## Importar datos a OpenRefine
+
+1. Abrir OpenRefine y crear nuevo proyecto
+2. Seleccionar archivo "tecnoShop_sales.csv"
+3. Configurar opciones de importación:
+    - Delimitador: coma
+    - Analizar celdas con comillas
+    - Previsualizar estructura
+
+
+## Limpieza de fechas inconsistentes
+
+Problema: Tenemos fechas en formatos "DD/MM/AAAA", "AAAA-MM-DD" y algunos valores inválidos.
+
+Solución:
+
+1. Crear nueva columna basada en "Fecha"
+2. Usar expresión GREL:
+```grel
+value.toDate('dd/MM/yyyy', 'yyyy-MM-dd')
+```
+3. Los valores inválidos quedarán en rojo para revisión manual
+
+
+## Estandarizar nombres de productos
+
+Problema: "Laptop XYZ", "LAPTOP XYZ", "Laptop-XYZ" son el mismo producto.
+
+Solución:
+
+1. Facetar por texto en columna "Producto"
+2. Usar función de agrupamiento por clustering clave
+3. Revisar grupos sugeridos y unificar
+4. Aplicar cambios
+
+
+## Tratar valores faltantes
+
+Problema: Algunos precios están vacíos.
+
+Solución 1 (eliminación):
+- Facetar por "en blanco" en columna Precio
+- Eliminar filas con precios faltantes
+
+Solución 2 (imputación):
+- Rellenar con promedio de precios por categoría:
+```grel
+with(row.record.cells["Categoría"].value, 
+v, 
+cells["Precio"].value ?: 
+    mean(filter(rowIndex, 
+    row.cells["Categoría"].value == v, 
+    cells["Precio"].value))
+)
+```
+
+
+## Eliminar duplicados
+
+Problema: Algunas órdenes aparecen duplicadas.
+
+Solución:
+
+1. Ordenar por Order ID
+2. Usar función "Remover filas duplicadas"
+3. Configurar para considerar Order ID como clave única
+
+
+## Exportar datos limpios
+
+Después de la limpieza:
+
+1. Exportar datos en formato CSV o Excel
+2. El proyecto de OpenRefine se guarda para referencia futura
+3. Los datos ahora están listos para análisis
+
+
+## Resultados de la limpieza
+
+Antes:
+
+- 5,000 filas con múltiples problemas de calidad
+
+Después:
+
+- 4,850 filas limpias y consistentes
+- Formatos estandarizados
+- Valores faltantes tratados
+- Duplicados eliminados
+
+
+## Análisis posterior con datos limpios
+
+
+### Ejemplo de insights obtenidos
+Con los datos limpios, podemos:
+- Identificar productos más vendidos por región
+- Analizar tendencias temporales de ventas
+- Calcular valor lifetime de clientes
+- Optimizar estrategias de marketing
+
+
+### Conclusión
+La preparación y limpieza de datos es una etapa crítica en el análisis. OpenRefine facilita este proceso con:
+
+- Interfaz visual intuitiva
+- Potentes funciones de transformación
+- Capacidad de manejar grandes volúmenes de datos
+- Reproducibilidad de las operaciones
+
+Invertir tiempo en una buena preparación de datos asegura análisis más confiables y decisiones empresariales mejor fundamentadas.
